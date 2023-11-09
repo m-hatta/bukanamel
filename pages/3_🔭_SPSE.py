@@ -36,31 +36,15 @@ from streamlit_extras.metric_cards import style_metric_cards
 from fungsi import *
 
 # Konfigurasi variabel lokasi UKPBJ
-daerah = ["PROV. KALBAR", "KAB. BENGKAYANG", "KAB. MELAWI", "KOTA PONTIANAK", "KAB. SANGGAU", "KAB. SEKADAU", "KAB. KAPUAS HULU", "KAB. KUBU RAYA", "KAB. LANDAK"]
+daerah = ["KAB. MUSI BANYUASIN"]
 
 tahuns = ["2023", "2022"]
 
 pilih = st.sidebar.selectbox("Pilih UKPBJ yang diinginkan :", daerah)
 tahun = st.sidebar.selectbox("Pilih Tahun :", tahuns)
 
-if pilih == "PROV. KALBAR":
-    kodeFolder = "prov"
-if pilih == "KAB. BENGKAYANG":
-    kodeFolder = "bky"
-if pilih == "KAB. MELAWI":
-    kodeFolder = "mlw"
-if pilih == "KOTA PONTIANAK":
-    kodeFolder = "ptk"
-if pilih == "KAB. SANGGAU":
-    kodeFolder = "sgu"
-if pilih == "KAB. SEKADAU":
-    kodeFolder = "skd"
-if pilih == "KAB. KAPUAS HULU":
-    kodeFolder = "kph"
-if pilih == "KAB. KUBU RAYA":
-    kodeFolder = "kkr"
-if pilih == "KAB. LANDAK":
-    kodeFolder = "ldk"
+if pilih == "KAB. MUSI BANYUASIN":
+    kodeFolder = "muba"
 
 # Persiapan Dataset
 con = duckdb.connect(database=':memory:')
