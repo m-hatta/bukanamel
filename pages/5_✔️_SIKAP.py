@@ -36,7 +36,7 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 from fungsi import *
 
 # Konfigurasi variabel lokasi UKPBJ
-daerah = ["PROV. KALBAR"]
+daerah = ["KAB. MUSI BANYUASIN"]
 
 tahuns = ["2023"]
 
